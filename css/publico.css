@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    padding-top: 120px;
+    padding-top: 64px;
     margin-bottom: 68px;
 }
 
@@ -63,7 +63,7 @@ body a:hover {
 .navbar {
     background: #fff;
     padding: 0 !important;
-    border-bottom: 1px solid #C8C8AA;
+    border-bottom: 1px solid #e8e8e8;
 }
 
 .navbar-nav .nav-link {
@@ -92,6 +92,10 @@ body a:hover {
 }
 
 /* MENU */
+
+#mapa {
+    height: 400px;
+}
 
 
 /* FOOTER */
