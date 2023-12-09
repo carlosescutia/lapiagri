@@ -27,23 +27,14 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <?php foreach ($norte as $norte_item) { ?>
                             <tr>
-                                <td>1</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <td><?= $norte_item['nom_personal'] ?></td>
+                                <td><?= $norte_item['cargo'] ?></td>
+                                <td><?= $norte_item['zona'] ?></td>
+                                <td><?= $norte_item['estado'] ?></td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>
@@ -60,23 +51,14 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <?php foreach ($centro as $centro_item) { ?>
                             <tr>
-                                <td>1</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <td><?= $centro_item['nom_personal'] ?></td>
+                                <td><?= $centro_item['cargo'] ?></td>
+                                <td><?= $centro_item['zona'] ?></td>
+                                <td><?= $centro_item['estado'] ?></td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>
@@ -93,23 +75,14 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <?php foreach ($sur as $sur_item) { ?>
                             <tr>
-                                <td>1</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <td><?= $sur_item['nom_personal'] ?></td>
+                                <td><?= $sur_item['cargo'] ?></td>
+                                <td><?= $sur_item['zona'] ?></td>
+                                <td><?= $sur_item['estado'] ?></td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>
