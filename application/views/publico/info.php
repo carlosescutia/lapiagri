@@ -1,9 +1,15 @@
 <div class="card mt-3 mb-3">
     <div class="card-header bg-success-subtle">
-        <strong>Info</strong>
+        <strong>Contacto</strong>
     </div>
     <div class="card-body">
-        <div class="col-sm-12">
+        <div id="info_blank" class="col-sm-12 text-center">
+            <h5>Seleccione un contacto</h5>
+            <div class="col-sm-3 offset-sm-4">
+                <img src="<?=base_url()?>img/persona.svg" class="img-fluid" alt="persona">
+            </div>
+        </div>
+        <div id="info_contacto" class="col-sm-12 d-none">
             <div class="row">
                 <div class="col-sm-2">
                     <img src="<?=base_url()?>img/persona.svg">

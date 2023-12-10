@@ -14,9 +14,18 @@ var backg  = L.tileLayer(backgUrl, {maxZoom: 18, attribution: backgAttribution})
 
 function ubica_persona(lon, lat) {
     currzoom = mapa.getZoom();
-    markers.clearLayers();
-    var marker = L.marker([lon, lat]).addTo(markers);
-    mapa.setView([lon, lat], currzoom);
+    marcadores.clearLayers();
+    var marker = L.marker([lon, lat]).addTo(marcadores);
+}
+
+function inicio_mapa(){
+    capas.clearLayers();
+    marcadores.clearLayers();
+    $('#info_blank').removeClass("d-none");
+    $('#info_contacto').addClass("d-none");
+    lon=23.85304;
+    lat=-102.94788; 
+    mapa.setView([lon, lat], 5);
 }
 
 function ubica_region(region) {
@@ -62,12 +71,12 @@ var lyr_sur = new L.GeoJSON.AJAX("<?=base_url()?>capas/sur.geojson", {
 
 // crear mapa en el div "map" y centrarlo en Guanajuato
 var mapa  = L.map('mapa', {
-    center: new L.LatLng(20.85304, -100.94788), 
-    zoom: 4,
+    center: new L.LatLng(23.85304, -102.94788), 
+    zoom: 5,
     layers: [backg ]
 });
 
-markers = L.layerGroup().addTo(mapa);
+marcadores = L.layerGroup().addTo(mapa);
 capas = L.layerGroup().addTo(mapa);
 
 </script>

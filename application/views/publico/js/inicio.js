@@ -18,6 +18,8 @@
                     $('#ciudad').html(data.ciudad);
                     $('#estado').html(data.estado);
                     ubica_persona(data.lon, data.lat);
+                    $('#info_blank').addClass("d-none");
+                    $('#info_contacto').removeClass("d-none");
                 }
 
             })

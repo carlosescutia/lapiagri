@@ -29,7 +29,7 @@
 
             <div class="col-sm-8 offset-sm-3 container-fluid text-center">
                 <div class="logo_menu">
-                    <img class="logo" src="<?=base_url()?>img/<?= $logo_org_sitio ?? 'logotipo.png' ?>" class="d-inline-block align-top" alt="logo">
+                    <a href="<?=base_url()?>"><img class="logo" src="<?=base_url()?>img/<?= $logo_org_sitio ?? 'logotipo.png' ?>" class="d-inline-block align-top" alt="logo"></a>
                 </div>
 
                 <button class="navbar-toggler navbar-toggler-right pr-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" >
