@@ -18,6 +18,7 @@
         <!-- leaflet -->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.2/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet@0.7.2/dist/leaflet.js"></script>
+        <script src="<?=base_url()?>js/leaflet.ajax.min.js"></script>
 
         <!-- jquery -->
         <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>

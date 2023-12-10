@@ -11,4 +11,11 @@ class Personal_model extends CI_Model {
         return $query->result_array();
     }
 
+    public function get_personal_cve($cve_personal)
+    {
+        $sql = 'select p.* from personal p where cve_personal = ? ';
+        $query = $this->db->query($sql, array($cve_personal));
+        return $query->row_array();
+    }
+
 }
