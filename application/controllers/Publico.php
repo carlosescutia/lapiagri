@@ -6,7 +6,7 @@ class Publico extends CI_Controller {
         parent::__construct();
         $this->load->model('opciones_publicas_model');
         $this->load->model('parametros_sistema_model');
-        $this->load->model('personal_model');
+        $this->load->model('empleados_model');
     }
 
     public function get_system_params()
@@ -29,11 +29,11 @@ class Publico extends CI_Controller {
         $data['opciones_publicas'] = $this->opciones_publicas_model->get_opciones_publicas();
 
         $region = 'norte' ;
-        $data[$region] = $this->personal_model->get_personal_region($region);
+        $data[$region] = $this->empleados_model->get_empleados_region($region);
         $region = 'centro' ;
-        $data[$region] = $this->personal_model->get_personal_region($region);
+        $data[$region] = $this->empleados_model->get_empleados_region($region);
         $region = 'sur' ;
-        $data[$region] = $this->personal_model->get_personal_region($region);
+        $data[$region] = $this->empleados_model->get_empleados_region($region);
 
         $this->load->view('templates/pubheader', $data);
         $this->load->view('publico/inicio', $data);

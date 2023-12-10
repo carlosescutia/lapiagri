@@ -4,13 +4,13 @@
 
     $(function(){
         $(".persona").click(function(){
-            var cve_personal = $(this).attr("alt");
+            var cve_empleado = $(this).attr("alt");
 
             $.ajax({
-                url : '<?=base_url()?>personal/get_personal_cve',type:'post',dataType:'json',
-                data: {cve_personal:cve_personal},
+                url : '<?=base_url()?>empleados/get_empleado',type:'post',dataType:'json',
+                data: {cve_empleado:cve_empleado},
                 success: function(data) {
-                    $('#nom_personal').html(data.nom_personal);
+                    $('#nom_empleado').html(data.nom_empleado);
                     $('#cargo').html(data.cargo);
                     $('#correo').html(data.correo);
                     $('#telefono').html(data.telefono);

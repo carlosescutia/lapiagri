@@ -71,6 +71,10 @@ body a:hover {
     height: 100%;
 }
 
+.imagen_ancho {
+    width: 40%
+}
+
 .logo_login {
     width: 100%;
 }

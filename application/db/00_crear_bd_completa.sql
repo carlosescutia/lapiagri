@@ -66,10 +66,10 @@ CREATE TABLE bitacora (
     valor text
 );
 
-DROP TABLE IF EXISTS personal;
-CREATE TABLE personal (
-    cve_personal serial,
-    nom_personal text,
+DROP TABLE IF EXISTS empleados;
+CREATE TABLE empleados (
+    cve_empleado serial,
+    nom_empleado text,
     jerarquia text,
     cargo text,
     correo text,

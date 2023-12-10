@@ -4,8 +4,7 @@
         </div>
 
         <footer class="footer">
-        <div class="col-sm-12">
-            <div class="row">
+            <div class="row mr-0 ms-0 me-0">
                 <div class="col-sm-6 offset-sm-3">
                     <ul class="nav justify-content-center">
                         <li class="nav-item">&copy; <?= $anio_org_sitio ?? '2023' ?> <?= $nom_org_sitio ?? 'Organización' ?></li>
@@ -34,7 +33,7 @@
                 <div class="col-sm-2 offset-sm-1">
                     <ul class="list-unstyled">
                         <a href="#">
-                            <li class="nav-item small">
+                            <li class="nav-item small mt-1">
                                 Desarrollado por
                                 <span><img src="<?=base_url()?>img/cenit.svg" class="imagen_ancho" alt="cenit"></span>
                             </li>
@@ -42,7 +41,6 @@
                     </ul>
                 </div>
             </div>
-        </div>
         </footer>
         
     </body>

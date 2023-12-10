@@ -6,18 +6,18 @@
         <div id="info_blank" class="col-sm-12 text-center">
             <h5>Seleccione un contacto</h5>
             <div class="col-sm-3 offset-sm-4">
-                <img src="<?=base_url()?>img/persona.svg" class="img-fluid" alt="persona">
+                <img src="<?=base_url()?>img/empleado.svg" class="img-fluid" alt="empleado">
             </div>
         </div>
         <div id="info_contacto" class="col-sm-12 d-none">
             <div class="row">
                 <div class="col-sm-2">
-                    <img src="<?=base_url()?>img/persona.svg">
+                    <img src="<?=base_url()?>img/empleado.svg">
                 </div>
                 <div class="col-sm-10">
                     <div class="row">
                         <div class="col-sm-10">
-                            <strong><p class="mb-0" id="nom_personal">Nombre</p></strong>
+                            <strong><p class="mb-0" id="nom_empleado">Nombre</p></strong>
                             <p id="cargo">Cargo</p>
                         </div>
                         <div class="col-sm-10">

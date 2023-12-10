@@ -7,7 +7,7 @@
             <h2>Aplicación</h2>
             <div class="row mb-3">
                 <div class="col-md-4">
-                    <?php include "organizaciones/boton.php" ?>
+                    <?php include "empleados/boton.php" ?>
                 </div>
                 <div class="col-md-4">
                 </div>

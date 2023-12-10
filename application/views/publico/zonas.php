@@ -37,7 +37,7 @@
                         <tbody>
                             <?php foreach ($norte as $norte_item) { ?>
                             <tr>
-                                <td><a href="#" class="persona" alt="<?=$norte_item['cve_personal']?>"><?= $norte_item['nom_personal'] ?></a></td>
+                                <td><a href="#" class="persona" alt="<?=$norte_item['cve_empleado']?>"><?= $norte_item['nom_empleado'] ?></a></td>
                                 <td><?= $norte_item['cargo'] ?></td>
                                 <td><?= $norte_item['zona'] ?></td>
                                 <td><?= $norte_item['estado'] ?></td>
@@ -61,7 +61,7 @@
                         <tbody>
                             <?php foreach ($centro as $centro_item) { ?>
                             <tr>
-                                <td><a href="#" class="persona" alt="<?=$centro_item['cve_personal']?>"><?= $centro_item['nom_personal'] ?></a></td>
+                                <td><a href="#" class="persona" alt="<?=$centro_item['cve_empleado']?>"><?= $centro_item['nom_empleado'] ?></a></td>
                                 <td><?= $centro_item['cargo'] ?></td>
                                 <td><?= $centro_item['zona'] ?></td>
                                 <td><?= $centro_item['estado'] ?></td>
@@ -85,7 +85,7 @@
                         <tbody>
                             <?php foreach ($sur as $sur_item) { ?>
                             <tr>
-                                <td><a href="#" class="persona" alt="<?=$sur_item['cve_personal']?>"><?= $sur_item['nom_personal'] ?></a></td>
+                                <td><a href="#" class="persona" alt="<?=$sur_item['cve_empleado']?>"><?= $sur_item['nom_empleado'] ?></a></td>
                                 <td><?= $sur_item['cargo'] ?></td>
                                 <td><?= $sur_item['zona'] ?></td>
                                 <td><?= $sur_item['estado'] ?></td>

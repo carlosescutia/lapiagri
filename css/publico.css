@@ -111,6 +111,10 @@ body a:hover {
     padding: 10px 0 0 0 !important;
 }
 
+.footer a:hover {
+    text-decoration: none;
+}
+
 .footer li {
     margin-bottom: 0.2em;
     color: #fff;
