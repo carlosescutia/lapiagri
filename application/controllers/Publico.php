@@ -34,6 +34,8 @@ class Publico extends CI_Controller {
         $data[$region] = $this->empleados_model->get_empleados_region($region);
         $region = 'sur' ;
         $data[$region] = $this->empleados_model->get_empleados_region($region);
+        $region = 'admin' ;
+        $data[$region] = $this->empleados_model->get_empleados_region($region);
 
         $this->load->view('templates/pubheader', $data);
         $this->load->view('publico/inicio', $data);

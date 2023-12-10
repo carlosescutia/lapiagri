@@ -11,6 +11,9 @@
         <li class="nav-item" role="presentation">
         <button class="nav-link rounded-0 titulo" id="pills-sur-tab" data-bs-toggle="pill" data-bs-target="#pills-sur" type="button" role="tab" aria-controls="pills-sur" aria-selected="false" onclick="ubica_region('sur')">Sur</button>
         </li>
+        <li class="nav-item" role="presentation">
+        <button class="nav-link rounded-0 titulo" id="pills-admin-tab" data-bs-toggle="pill" data-bs-target="#pills-admin" type="button" role="tab" aria-controls="pills-admin" aria-selected="false" onclick="inicio_mapa()">Administrativo</button>
+        </li>
     </ul>
 </div>
 
@@ -89,6 +92,30 @@
                                 <td><?= $sur_item['cargo'] ?></td>
                                 <td><?= $sur_item['zona'] ?></td>
                                 <td><?= $sur_item['estado'] ?></td>
+                            </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-admin" role="tabpanel" aria-labelledby="pills-admin-tab" tabindex="0">
+                <div class="card bg-transparent border-0 mb-3">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Cargo</th>
+                                <th scope="col">Zona</th>
+                                <th scope="col">Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($admin as $admin_item) { ?>
+                            <tr>
+                                <td><a href="#" class="persona" alt="<?=$admin_item['cve_empleado']?>"><?= $admin_item['nom_empleado'] ?></a></td>
+                                <td><?= $admin_item['cargo'] ?></td>
+                                <td><?= $admin_item['zona'] ?></td>
+                                <td><?= $admin_item['estado'] ?></td>
                             </tr>
                             <?php } ?>
                         </tbody>
