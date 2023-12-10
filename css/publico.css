@@ -83,6 +83,10 @@ body a:hover {
     height: 100%;
 }
 
+.imagen_ancho {
+    width: 40%
+}
+
 .titulo_menu {
     margin-right: 40px;
 }
@@ -103,7 +107,7 @@ body a:hover {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #000 !important;
+    background-color: #4e8c68 !important;
     padding: 10px 0 0 0 !important;
 }
 
