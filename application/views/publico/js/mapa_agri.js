@@ -18,30 +18,32 @@ function ubica_persona(lon, lat) {
     var marker = L.marker([lon, lat]).addTo(marcadores);
 }
 
-function inicio_mapa(){
+function limpiar_info(){
     capas.clearLayers();
     marcadores.clearLayers();
     $('#info_blank').removeClass("d-none");
     $('#info_contacto').addClass("d-none");
+}
+
+function inicio_mapa(){
+    limpiar_info();
     lon=23.85304;
     lat=-102.94788; 
     mapa.setView([lon, lat], 5);
 }
 
 function ubica_region(region) {
+    limpiar_info();
     switch(region) {
         case 'norte':
-            capas.clearLayers();
             lyr_norte.addTo(capas);
             mapa.fitBounds(lyr_norte);
             break;
         case 'centro':
-            capas.clearLayers();
             lyr_centro.addTo(capas);
             mapa.fitBounds(lyr_centro);
             break;
         case 'sur':
-            capas.clearLayers();
             lyr_sur.addTo(capas);
             mapa.fitBounds(lyr_sur);
             break;
