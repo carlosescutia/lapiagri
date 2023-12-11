@@ -9,6 +9,9 @@ application/logs/*
 
 !application/*/.htaccess
 
+fotos/*
+!fotos/index.html
+
 *~
 *.swp
 *.swo

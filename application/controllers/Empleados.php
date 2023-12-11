@@ -76,6 +76,7 @@ class Empleados extends CI_Controller {
             $data['empleados'] = $this->empleados_model->get_empleado($cve_empleado);
 
             $this->load->view('templates/admheader', $data);
+            $this->load->view('templates/dlg_borrar_archivos');
             $this->load->view('catalogos/empleados/detalle', $data);
             $this->load->view('templates/footer', $data);
         } else {

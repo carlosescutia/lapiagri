@@ -17,6 +17,18 @@
                     $('#zona').html(data.zona);
                     $('#ciudad').html(data.ciudad);
                     $('#estado').html(data.estado);
+
+                    foto = "<?=base_url()?>fotos/"+data.cve_empleado+".jpg";
+                    $.get(foto,
+                        function(response, status, jqXhr) {
+							$("#foto_empleado").attr("src","<?=base_url()?>fotos/"+data.cve_empleado+".jpg");
+                        }
+                    )
+                        .fail(function(response, status, jqXhr) {
+							$("#foto_empleado").attr("src","<?=base_url()?>img/empleado.svg");
+                        }
+                        );
+
                     ubica_persona(data.lon, data.lat);
                     $('#info_blank').addClass("d-none");
                     $('#info_contacto').removeClass("d-none");

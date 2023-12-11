@@ -10,24 +10,22 @@
             </div>
         </div>
         <div id="info_contacto" class="col-sm-12 d-none">
-            <div class="row">
-                <div class="col-sm-2">
-                    <img src="<?=base_url()?>img/empleado.svg">
+            <div class="row mb-3">
+                <div class="col-sm-4">
+                    <img class="img-fluid img-thumbnail rounded" id="foto_empleado" src="<?=base_url()?>img/empleado.svg">
                 </div>
-                <div class="col-sm-10">
-                    <div class="row">
-                        <div class="col-sm-10">
-                            <strong><p class="mb-0" id="nom_empleado">Nombre</p></strong>
-                            <p id="cargo">Cargo</p>
-                        </div>
-                        <div class="col-sm-10">
-                            <p class="mb-0" id="correo">correo</p>
-                            <p class="mb-0" id="telefono">telefono</p>
-                            <span class="mb-0" id="zona">zona</span>,&nbsp; 
-                            <span class="mb-0" id="ciudad">ciudad</span>,&nbsp;
-                            <span class="mb-0" id="estado">estado</span>
-                        </div>
-                    </div>
+                <div class="col-sm-8">
+                    <strong><p class="mb-0" id="nom_empleado">Nombre</p></strong>
+                    <p id="cargo">Cargo</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="mb-0" id="correo">correo</p>
+                    <p class="mb-0" id="telefono">telefono</p>
+                    <span class="mb-0" id="zona">zona</span>,&nbsp; 
+                    <span class="mb-0" id="ciudad">ciudad</span>,&nbsp;
+                    <span class="mb-0" id="estado">estado</span>
                 </div>
             </div>
         </div>
