@@ -4,6 +4,7 @@
                     <?php include "mapa.php" ?>
                 </div>
                 <div class="col-sm-4">
+                    <?php include "logo.php" ?>
                     <?php include "info.php" ?>
                 </div>
             </div>

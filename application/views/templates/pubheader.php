@@ -25,29 +25,4 @@
 
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm navbar-light fixed-top d-print-block pr-3">
-
-            <div class="col-sm-8 offset-sm-3 container-fluid text-center">
-                <div class="logo_menu">
-                    <a href="<?=base_url()?>"><img class="logo" src="<?=base_url()?>img/<?= $logo_org_sitio ?? 'logotipo.png' ?>" class="d-inline-block align-top" alt="logo"></a>
-                </div>
-
-                <button class="navbar-toggler navbar-toggler-right pr-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="col-sm-7 mt-2 text-center">
-                        <h5 class="texto-titulo"><?= $nom_sitio_largo ?? 'Lorem ipsum' ?></h5>
-                        <ul class="navbar-nav mr-auto">
-                            <?php foreach ($opciones_publicas as $opciones_publicas_item) { ?>
-                                <li class="nav-item"><a class="nav-link" href="<?=base_url()?><?=$opciones_publicas_item['url'] ?>"><?=$opciones_publicas_item['nom_opcion'] ?></a></li>
-                            <?php } ?>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </nav>
-
         <main role="main" class="container-fluid">
