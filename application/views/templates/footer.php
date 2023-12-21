@@ -30,7 +30,7 @@
                         <li class="nav-item"><i class="bi bi-envelope"></i> <?= $correo_org_sitio ?? 'contacto@organizacion.inet' ?> &nbsp; </li>
                     </ul>
                 </div>
-                <div class="col-sm-2 offset-sm-1">
+                <div class="col-sm-3 text-end">
                     <ul class="list-unstyled">
                         <a href="#">
                             <li class="nav-item small mt-1">

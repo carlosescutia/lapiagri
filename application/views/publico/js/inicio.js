@@ -53,7 +53,7 @@
                     }
                     );
 
-                ubica_persona(data.lon, data.lat);
+                ubica_persona(data.lat, data.lon);
                 $('#info_blank').addClass("d-none");
                 $('#info_contacto').removeClass("d-none");
             }

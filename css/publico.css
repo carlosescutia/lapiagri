@@ -60,7 +60,11 @@ body a:hover {
 }
 
 .imagen_ancho {
-    width: 40%
+    width: 30%
+}
+
+.foto_empleado {
+    max-height: 150px;
 }
 
 .texto-titulo {

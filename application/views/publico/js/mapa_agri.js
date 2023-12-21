@@ -56,10 +56,10 @@ function empty_style(feature){
     };
 }
 
-function ubica_persona(lon, lat) {
+function ubica_persona(lat, lon) {
     currzoom = mapa.getZoom();
     marcadores.clearLayers();
-    var marker = L.marker([lon, lat]).addTo(marcadores);
+    var marker = L.marker([lat, lon]).addTo(marcadores);
 }
 
 function limpiar_info(){

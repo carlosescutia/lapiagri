@@ -12,7 +12,7 @@
         <div id="info_contacto" class="col-sm-12 d-none">
             <div class="row mb-3">
                 <div class="col-sm-4">
-                    <img class="img-fluid img-thumbnail rounded" id="foto_empleado" src="<?=base_url()?>img/empleado.svg">
+                    <img class="img-fluid img-thumbnail rounded foto_empleado" id="foto_empleado" src="<?=base_url()?>img/empleado.svg">
                 </div>
                 <div class="col-sm-8">
                     <strong><p class="mb-0" id="nom_empleado">Nombre</p></strong>
