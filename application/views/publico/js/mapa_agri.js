@@ -5,12 +5,56 @@
  *
  * ****************************************/
 
-// add a OpenStreetMap tile layer
+var currEstado;
 
-var backgUrl = '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-backgAttribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+function onEachFeature(feature, layer) {
+    layer.on({
+        click: function(e){
+            lati = e.latlng.lat.toFixed(6);
+            longi = e.latlng.lng.toFixed(6);
+            empleados_estado(lati, longi);
+            if (currEstado) {
+                lyr_estados.resetStyle(currEstado);
+            }
+            highlightFeature(e);
+        },
+    });
+}
 
-var backg  = L.tileLayer(backgUrl, {maxZoom: 18, attribution: backgAttribution});
+function highlightFeature(e) {
+    var estado = e.target;
+    estado.setStyle({
+        fillColor: '#4e8c68',
+        fillOpacity: 0.4,
+        color: '#4e8c68',
+        weight: 2,
+        opacity: 0.6,
+        dashArray: '6'
+    });
+    currEstado = estado;
+}
+
+function resetHighlight(e) {
+    lyr_estados.resetStyle(e.target);
+}
+
+function style(feature){
+    return {
+        fillColor: '#4e8c68',
+        fillOpacity: 0.1,
+        color: '#4e8c68',
+        weight: 2,
+        opacity: 0.5,
+        dashArray: '6'
+    };
+}
+
+function empty_style(feature){
+    return {
+        fillOpacity: 0,
+        opacity: 0,
+    };
+}
 
 function ubica_persona(lon, lat) {
     currzoom = mapa.getZoom();
@@ -25,16 +69,13 @@ function limpiar_info(){
     $('#info_contacto').addClass("d-none");
 }
 
-function inicio_mapa(){
-    limpiar_info();
-    lon=23.85304;
-    lat=-102.94788; 
-    mapa.setView([lon, lat], 5);
-}
-
 function ubica_region(region) {
     limpiar_info();
     switch(region) {
+        case 'estados':
+            lyr_estados.addTo(capas);
+            mapa.fitBounds(lyr_estados);
+            break;
         case 'norte':
             lyr_norte.addTo(capas);
             mapa.fitBounds(lyr_norte);
@@ -47,20 +88,17 @@ function ubica_region(region) {
             lyr_sur.addTo(capas);
             mapa.fitBounds(lyr_sur);
             break;
+        case 'administrativo':
+            lyr_administrativo.addTo(capas);
+            mapa.fitBounds(lyr_administrativo);
+            break;
     }
 }
 
-function style(feature){
-    return {
-        fillColor: '#4e8c68',
-        fillOpacity: 0.1,
-        color: '#4e8c68',
-        weight: 2,
-        opacity: 0.5,
-        dashArray: '6'
-    };
-}
-
+var lyr_estados = new L.GeoJSON.AJAX("<?=base_url()?>capas/estados.geojson", {
+    style: empty_style,
+    onEachFeature:onEachFeature,
+});
 var lyr_norte = new L.GeoJSON.AJAX("<?=base_url()?>capas/norte.geojson", {
     style: style,
 });
@@ -70,8 +108,14 @@ var lyr_centro = new L.GeoJSON.AJAX("<?=base_url()?>capas/centro.geojson", {
 var lyr_sur = new L.GeoJSON.AJAX("<?=base_url()?>capas/sur.geojson", {
     style: style,
 });
+var lyr_administrativo = new L.GeoJSON.AJAX("<?=base_url()?>capas/estados.geojson", {
+    style: empty_style,
+});
 
-// crear mapa en el div "map" y centrarlo en Guanajuato
+var backgUrl = '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+backgAttribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+var backg  = L.tileLayer(backgUrl, {maxZoom: 18, attribution: backgAttribution});
+
 var mapa  = L.map('mapa', {
     center: new L.LatLng(23.85304, -102.94788), 
     zoom: 5,
@@ -80,5 +124,12 @@ var mapa  = L.map('mapa', {
 
 marcadores = L.layerGroup().addTo(mapa);
 capas = L.layerGroup().addTo(mapa);
+
+function onMapClick(e) {
+    lati = e.latlng.lat.toFixed(6);
+    longi = e.latlng.lng.toFixed(6);
+    empleados_estado(lati, longi);
+}
+mapa.on('click', onMapClick);
 
 </script>

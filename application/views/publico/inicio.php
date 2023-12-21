@@ -14,5 +14,4 @@
         </div>
 
         <?php include "js/inicio.js" ?>
-        <?php include "js/mapa_common.js" ?>
         <?php include "js/mapa_agri.js" ?>
