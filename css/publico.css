@@ -71,9 +71,28 @@ body a:hover {
     color: #001E89 !important;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #mapa {
+        height: 250px;
+        width: 90%;
+    }
 
-#mapa {
-    height: 500px;
+    .foto_empleado {
+        max-height: 80px;
+    }
+
+    .col-escritorio {
+        display: none;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #mapa {
+        height: 500px;
+    }
 }
 
 

@@ -1,12 +1,12 @@
 <div class="card mt-3 mb-3">
-    <div class="card-header bg-success-subtle">
-        <strong>Contacto</strong>
+    <div class="card-header bg-success-subtle text-end">
+        <a href="<?=base_url()?>"><img class="imagen_ancho" src="<?=base_url()?>img/<?= $logo_org_sitio ?? 'logotipo.png' ?>" alt="logo"></a>
     </div>
     <div class="card-body">
         <div id="info_blank" class="col-sm-12 text-center">
             <h5>Seleccione un contacto</h5>
             <div class="col-sm-3 offset-sm-4">
-                <img src="<?=base_url()?>img/empleado.svg" class="img-fluid" alt="empleado">
+                <img src="<?=base_url()?>img/empleado.svg" class="img-fluid foto_empleado" alt="empleado">
             </div>
         </div>
         <div id="info_contacto" class="col-sm-12 d-none">

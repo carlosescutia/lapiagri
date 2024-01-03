@@ -11,7 +11,7 @@
           `<tr>
           <td><a href="#" class="persona" alt="${element.cve_empleado}" onclick="info_persona(${element.cve_empleado})">${element.nom_empleado}</a></td>
           <td>${element.cargo}</td>
-          <td>${element.zona}</td>
+          <td class="col-escritorio">${element.zona}</td>
           <td>${element.estado}</td>
           </tr>`
       ));
