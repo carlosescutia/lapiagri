@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-sm-3 text-end">
                     <ul class="list-unstyled">
-                        <a href="#">
+                        <a href="https://cenit.dev" target="_blank">
                             <li class="nav-item small mt-1">
                                 Desarrollado por
                                 <span><img src="<?=base_url()?>img/cenit.svg" class="imagen_ancho" alt="cenit"></span>
