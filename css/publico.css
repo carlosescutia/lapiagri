@@ -63,35 +63,44 @@ body a:hover {
     width: 30%
 }
 
-.foto_empleado {
-    max-height: 150px;
-}
-
 .texto-titulo {
     color: #001E89 !important;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+#mapa {
+    height: 250px;
+    width: 90%;
+}
+
+.foto_empleado {
+    max-height: 80px;
+}
+
+.col-escritorio {
+    display: none;
+}
+
+/* tablet */
+@media only screen and (min-width: 576px) {
     #mapa {
-        height: 250px;
-        width: 90%;
+        height: 375px;
+        width: 100%;
     }
 
     .foto_empleado {
-        max-height: 80px;
+        max-height: 100px;
     }
-
-    .col-escritorio {
-        display: none;
-    }
-
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* desktop */
+@media only screen and (min-width: 768px) {
     #mapa {
         height: 500px;
+        width: 100%;
+    }
+
+    .foto_empleado {
+        max-height: 100px;
     }
 }
 

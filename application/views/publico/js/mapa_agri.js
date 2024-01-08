@@ -119,7 +119,8 @@ var backg  = L.tileLayer(backgUrl, {maxZoom: 18, attribution: backgAttribution})
 var mapa  = L.map('mapa', {
     center: new L.LatLng(23.85304, -102.94788), 
     zoom: 5,
-    layers: [backg ]
+    layers: [backg ],
+    gestureHandling: true
 });
 
 marcadores = L.layerGroup().addTo(mapa);

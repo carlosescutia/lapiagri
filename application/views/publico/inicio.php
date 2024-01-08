@@ -1,12 +1,12 @@
         <div class="col-sm-12">
             <div class="row"> 
-                <div class="col-sm-4 order-lg-2">
+                <div class="col-sm-6 col-md-4 order-sm-2">
                     <?php include "info.php" ?>
                 </div>
-                <div class="col-sm-6 offset-sm-1 order-lg-1">
+                <div class="col-sm-6 offset-md-1 order-sm-1">
                     <?php include "mapa.php" ?>
                 </div>
-                <div class="col-sm-12 mt-3 order-lg-3">
+                <div class="col-sm-12 mt-3 order-sm-3">
                     <?php include "zonas.php" ?>
                 </div>
             </div>
