@@ -112,16 +112,14 @@ var lyr_administrativo = new L.GeoJSON.AJAX("<?=base_url()?>capas/estados.geojso
     style: empty_style,
 });
 
-var backgUrl = '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-backgAttribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
-var backg  = L.tileLayer(backgUrl, {maxZoom: 18, attribution: backgAttribution});
-
 var mapa  = L.map('mapa', {
     center: new L.LatLng(23.85304, -102.94788), 
-    zoom: 5,
-    layers: [backg ],
-    gestureHandling: true
+    zoom: 5
 });
+
+var backgUrl = '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+backgAttribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+var backg  = L.tileLayer(backgUrl, {maxZoom: 18, attribution: backgAttribution}).addTo(mapa);
 
 marcadores = L.layerGroup().addTo(mapa);
 capas = L.layerGroup().addTo(mapa);
