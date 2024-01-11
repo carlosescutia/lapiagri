@@ -46,6 +46,7 @@
                         <option value="centro" <?= ($empleados['region'] == 'centro' ? 'selected' : '') ?> >Centro</option>
                         <option value="sur" <?= ($empleados['region'] == 'sur' ? 'selected' : '') ?> >Sur</option>
                         <option value="admin" <?= ($empleados['region'] == 'admin' ? 'selected' : '') ?> >Administrativo</option>
+                        <option value="staff" <?= ($empleados['region'] == 'staff' ? 'selected' : '') ?> >Staff</option>
                     </select>
                 </div>
                 <div class="col-sm-3">

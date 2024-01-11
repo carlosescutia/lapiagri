@@ -46,6 +46,7 @@
                         <option value="centro" selected>Centro</option>
                         <option value="sur">Sur</option>
                         <option value="admin">Administrativo</option>
+                        <option value="staff">Staff</option>
                     </select>
                 </div>
                 <div class="col-sm-3">

@@ -92,6 +92,10 @@ function ubica_region(region) {
             lyr_administrativo.addTo(capas);
             mapa.fitBounds(lyr_administrativo);
             break;
+        case 'staff':
+            lyr_staff.addTo(capas);
+            mapa.fitBounds(lyr_staff);
+            break;
     }
 }
 
@@ -109,6 +113,10 @@ var lyr_sur = new L.GeoJSON.AJAX("<?=base_url()?>capas/sur.geojson", {
     style: style,
 });
 var lyr_administrativo = new L.GeoJSON.AJAX("<?=base_url()?>capas/estados.geojson", {
+    style: empty_style,
+});
+
+var lyr_staff = new L.GeoJSON.AJAX("<?=base_url()?>capas/estados.geojson", {
     style: empty_style,
 });
 
