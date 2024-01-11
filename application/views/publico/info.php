@@ -23,8 +23,6 @@
                 <div class="col-lg-12">
                     <p class="mb-0" id="correo">correo</p>
                     <p class="mb-0" id="telefono">telefono</p>
-                    <span class="mb-0" id="zona">zona</span>,&nbsp; 
-                    <span class="mb-0" id="ciudad">ciudad</span>,&nbsp;
                     <span class="mb-0" id="estado">estado</span>
                 </div>
             </div>

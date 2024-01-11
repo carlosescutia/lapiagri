@@ -28,7 +28,6 @@
                                 <tr>
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Cargo</th>
-                                    <th scope="col" class="col-escritorio">Zona</th>
                                     <th scope="col">Estado</th>
                                 </tr>
                             </thead>
@@ -45,7 +44,6 @@
                             <tr>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Cargo</th>
-                                <th scope="col" class="col-escritorio">Zona</th>
                                 <th scope="col">Estado</th>
                             </tr>
                         </thead>
@@ -54,7 +52,6 @@
                             <tr>
                                 <td><a href="#" class="persona" onclick="info_persona(<?=$norte_item['cve_empleado']?>)"><?= $norte_item['nom_empleado'] ?></a></td>
                                 <td><?= $norte_item['cargo'] ?></td>
-                                <td class="col-escritorio"><?= $norte_item['zona'] ?></td>
                                 <td><?= $norte_item['estado'] ?></td>
                             </tr>
                             <?php } ?>
@@ -69,7 +66,6 @@
                             <tr>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Cargo</th>
-                                <th scope="col" class="col-escritorio">Zona</th>
                                 <th scope="col">Estado</th>
                             </tr>
                         </thead>
@@ -78,7 +74,6 @@
                             <tr>
                                 <td><a href="#" class="persona" onclick="info_persona(<?=$centro_item['cve_empleado']?>)"><?= $centro_item['nom_empleado'] ?></a></td>
                                 <td><?= $centro_item['cargo'] ?></td>
-                                <td class="col-escritorio"><?= $centro_item['zona'] ?></td>
                                 <td><?= $centro_item['estado'] ?></td>
                             </tr>
                             <?php } ?>
@@ -93,7 +88,6 @@
                             <tr>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Cargo</th>
-                                <th scope="col" class="col-escritorio">Zona</th>
                                 <th scope="col">Estado</th>
                             </tr>
                         </thead>
@@ -102,7 +96,6 @@
                             <tr>
                                 <td><a href="#" class="persona" onclick="info_persona(<?=$sur_item['cve_empleado']?>)"><?= $sur_item['nom_empleado'] ?></a></td>
                                 <td><?= $sur_item['cargo'] ?></td>
-                                <td class="col-escritorio"><?= $sur_item['zona'] ?></td>
                                 <td><?= $sur_item['estado'] ?></td>
                             </tr>
                             <?php } ?>
@@ -117,7 +110,6 @@
                             <tr>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Cargo</th>
-                                <th scope="col" class="col-escritorio">Zona</th>
                                 <th scope="col">Estado</th>
                             </tr>
                         </thead>
@@ -126,7 +118,6 @@
                             <tr>
                                 <td><a href="#" class="persona" onclick="info_persona(<?=$admin_item['cve_empleado']?>)"><?= $admin_item['nom_empleado'] ?></a></td>
                                 <td><?= $admin_item['cargo'] ?></td>
-                                <td class="col-escritorio"><?= $admin_item['zona'] ?></td>
                                 <td><?= $admin_item['estado'] ?></td>
                             </tr>
                             <?php } ?>
